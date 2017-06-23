@@ -1,7 +1,8 @@
 /* General settings */
 html {
-  font-size: 18px;
+  font-size: 16px;
   font-family: Helvetica, sans-serif;
+  line-height: 1.8;
 }
 
 .flex {
@@ -15,12 +16,29 @@ html {
 }
 
 .column-container {
+  display: flex;
+  flex-direction: column;
   flex: 1;
 }
 
 h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+h2 {
   font-size: 2rem;
   font-weight: bold;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 1rem;
+  text-transform: uppercase;
 }
 
 /* Header */
@@ -31,11 +49,11 @@ header {
 }
 
 #header-logo {
-  padding-left: 24px;
+  padding-left: 1.5rem;
   justify-content: space-between;
   align-items: center;
   text-transform: uppercase;
-  height: 64px;
+  height: 4rem;
 }
 
 #academy {
@@ -44,24 +62,25 @@ header {
 
 nav {
   text-align: right;
-  padding-right: 24px;
+  padding-right: 1.5rem;
 }
 
 nav span {
-  padding: 8px;
+  padding: 0.5rem;
 }
 
 /* Learn New section */
 #learn-new {
-  padding-top: 64px; /* to offset fixed header */
+  padding-top: 4rem; /* to offset fixed header */
   background-color: lightgray;
+  width: 100%;
 }
 
 #learn-new img{
   width: 60%;
   height: auto;
   margin: 0;
-  padding: 32px 40px 32px 24px;
+  padding: 2rem 2.5rem 2rem 1.5rem;
 }
 
 #learn-new .text-block {
@@ -69,19 +88,72 @@ nav span {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding-right: 86px;
+  padding-right: 5.375rem;
 }
 
 .button {
   background-color: black;
   color: white;
-  border-radius: 2px;
+  border-radius: 0.125rem;
   width: 100%;
   text-align: center;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 #learn-new p {
-  padding: 32px 32px 32px 0;
+  padding: 2rem 2rem 2rem 0;
+}
+
+/* Keep practicing section */
+.quote {
+  font-style: italic;
+}
+
+.img-text-container {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+}
+
+#keep-practicing {
+  width: 60%;
+  height: auto;
+  margin: 2rem 1.5rem 2rem 1.5rem;
+}
+
+#keep-practicing h2 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#keep-practicing span {
+  display: block;
+}
+
+#keep-practicing img {
+  /*width: 60%;*/
+}
+
+#information-tiles {
+  width: 26.4375rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#information-tiles img {
+  width: 35%;
+  height: auto;
+  padding: 1rem;
+}
+
+.text-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-column p {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
