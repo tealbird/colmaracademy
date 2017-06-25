@@ -132,7 +132,7 @@ nav span {
 }
 
 #keep-practicing img {
-  /*width: 60%;*/
+  height: auto;
 }
 
 #information-tiles {
@@ -156,4 +156,105 @@ nav span {
 .text-column p {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+/* Start learning section */
+#courses {
+  background-color: lightgray;
+  padding-bottom: 1rem;
+  width: 100%;
+}
+
+#courses h2 {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#courses h3 {
+  padding-top: 1rem;
+}
+
+#courses h4 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+#courses .img-text-container {
+  margin: 0 1rem 2rem 1rem;
+  background-color: white;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: space-around;
+  flex: 1;
+}
+
+#courses img {
+  width: 100%;
+  height: auto;
+}
+
+#courses .text-cont {
+  padding-left: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+/* Thesis section */
+#thesis-section-title {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+#thesis-video {
+  width: 60%;
+  display: block;
+  justify-content: flex-start;
+  align-content: flex-start;
+  padding: 0 1rem 2rem 1.5rem;
+  overflow: hidden;
+}
+
+#theses {
+
+}
+
+#thesis-video video {
+  display: block;
+  margin-top: 0;
+  width: 100%;
+}
+
+#theses .text-cont {
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#theses .img-text-container {
+  width: 26.4375rem;
+  overflow: hidden;
+}
+
+#theses img {
+  height: 10.5rem;
+  width: 10.5rem;
+  padding: 1rem;
+}
+
+#fisma {
+  background-color: lightgray;
+}
+
+#theses h3 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+/* footer */
+footer {
+  padding: 2rem 1.5rem;
 }

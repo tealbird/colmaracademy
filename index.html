@@ -5,6 +5,7 @@
     <title>Colmar Academy</title>
     <link href="resources/css/reset.css" type="text/css" rel="stylesheet">
     <link href="resources/css/style.css" type="text/css" rel="stylesheet">
+    <link rel="icon" href="resources/images/colmaracademy.ico" type="image/x-icon">
   </head>
   <body>
     <header>
@@ -79,84 +80,108 @@
       </div >
 
       <!-- Start learning section with image and text boxes for each subject area -->
-      <div class="section" id="courses">
+      <div id="courses">
         <h2>Start learning</h2>
-        <div class="column-container">
-          <div class="img-text-container">
-            <img src="resources/images/course-software.jpg">
-            <h3>Software engineering</h3>
-            <h4>Courses</h4>
-            <p>Web Development, Mobile Development, iOT, APIs</p>
+        <div class="section">
+          <div class="column-container">
+            <div class="img-text-container">
+              <img src="resources/images/course-software.jpg">
+              <div class="text-cont">
+                <h3>Software engineering</h3>
+                <h4>Courses</h4>
+                <p>Web Development, Mobile Development, iOT, APIs</p>
+              </div>
+            </div>
+            <div class="img-text-container">
+              <img src="resources/images/course-data.jpg">
+              <div class="text-cont">
+                <h3>Data</h3>
+                <h4>Courses</h4>
+                <p>Data Science, Big Data, SQL, Data Visualization</p>
+              </div>
+            </div>
           </div>
-          <div class="img-text-container">
-            <img src="resources/images/course-data.jpg">
-            <h3>Data</h3>
-            <h4>Courses</h4>
-            <p>Data Science, Big Data, SQL, Data Visualization</p>
+          <div class="column-container">
+            <div class="img-text-container">
+              <img src="resources/images/course-computer-art.jpg">
+              <div class="text-cont">
+                <h3>Computer art</h3>
+                <h4>Courses</h4>
+                <p>Imaging &amp Design, Web Design, Motion Graphics &amp Visual Effects, Computer Animation</p>
+              </div>
+            </div>
+            <div class="img-text-container">
+              <img src="resources/images/course-business.jpg">
+              <div class="text-cont">
+                <h3>Business</h3>
+                <h4>Courses</h4>
+                <p>Product Development, Business Development, Startup</p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="column-container">
-          <div class="img-text-container">
-            <img src="resources/images/course-computer-art.jpg">
-            <h3>Computer art</h3>
-            <h4>Courses</h4>
-            <p>Imaging &amp Design, Web Design, Motion Graphics &amp Visual Effects, Computer Animation</p>
-          </div>
-          <div class="img-text-container">
-            <img src="resources/images/course-business.jpg">
-            <h3>Business</h3>
-            <h4>Courses</h4>
-            <p>Product Development, Business Development, Startup</p>
-          </div>
-        </div>
-        <div class="column-container">
-          <div class="img-text-container">
-            <img src="resources/images/course-design.jpg">
-            <h3>Design</h3>
-            <h4>Courses</h4>
-            <p>User Experience Design, User Research, Visual Design</p>
-          </div>
-          <div class="img-text-container">
-            <img src="resources/images/course-marketing.jpg">
-            <h3>Marketing</h3>
-            <h4>Courses</h4>
-            <p>Analytics, Content Marketing, Mobile Marketing</p>
+          <div class="column-container">
+            <div class="img-text-container">
+              <img src="resources/images/course-design.jpg">
+              <div class="text-cont">
+                <h3>Design</h3>
+                <h4>Courses</h4>
+                <p>User Experience Design, User Research, Visual Design</p>
+              </div>
+            </div>
+            <div class="img-text-container">
+              <img src="resources/images/course-marketing.jpg">
+              <div class="text-cont">
+                <h3>Marketing</h3>
+                <h4>Courses</h4>
+                <p>Analytics, Content Marketing, Mobile Marketing</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
       <!-- Thesis exhibit section - main video, summary of other theses -->
+      <h2 id="thesis-section-title">Thesis exhibit</h2>
       <div class="section" id="theses">
-        <h2>Thesis exhibit</h2>
-        <div class="column-container">
-          <video width="320" height="240" controls>
+        <div class="column-container" id="thesis-video">
+          <video display="block" width="580" height="400">
             <source src="resources/videos/thesis.mp4">
             Your browser does not support the video tag.
           </video>
-          <h3>Reimagine urban</h3>
-          <span class="quote">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</span>
+          <div class="text-column">
+            <h3>Reimagine urban</h3>
+            <span class="quote">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</span>
+          </div>
         </div>
 
         <!-- Right side column of two, each with image left side, text on right -->
         <div class="column-container">
-          <div class="img-text-container">
+          <div class="img-text-container" id="fisma">
             <img src="resources/images/thesis-fisma.jpg">
-            <h3>Fisma: Design and</h3>
-            <p>Designer showcase of new prototype product</p>
+            <div class="text-cont">
+              <h3>Fisma: Design and</h3>
+              <p>Designer showcase of new prototype product</p>
+            </div>
           </div>
-          <div class="img-text-container">
+          <div class="img-text-container" id="then-and-now">
             <img src="resources/images/thesis-now-and-then.jpg">
-            <h3>Now and then</h3>
-            <p>Research study about New York</p>
+            <div class="text-cont">
+              <h3>Now and then</h3>
+              <p>Research study about New York</p>
+            </div>
           </div>
       </div>
     </main>
 
     <!-- copyright, terms, privacy -->
     <footer>
-      <span>&copy 2016 Colmar Academy. All rights reserved</span>
-      <a href="#">Terms</a>
-      <a href="#">Privacy</a>
+      <div class="flex">
+        <span>&copy 2016 Colmar Academy. All rights reserved</span>
+        <div>
+          <a href="#">Terms</a>
+          <a href="#">Privacy</a>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
